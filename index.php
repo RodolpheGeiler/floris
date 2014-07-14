@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Stylish Portfolio Template for Bootstrap</title>
+    <title>Floris - Livraison de fleurs en France.</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
@@ -26,7 +26,7 @@
             <a id="menu-close" href="#" class="btn btn-default btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
             <li class="sidebar-brand"><a href="http://startbootstrap.com">Start Bootstrap</a>
             </li>
-            <li><a href="#top">Home</a>
+            <li><a href="#top">Accueil</a>
             </li>
             <li><a href="#about">About</a>
             </li>
@@ -34,7 +34,7 @@
             </li>
             <li><a href="#portfolio">Portfolio</a>
             </li>
-            <li><a href="#contact">Contact</a>
+            <li><a href="#contact">Nous contacter</a>
             </li>
         </ul>
     </div>

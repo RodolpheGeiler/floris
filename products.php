@@ -69,7 +69,7 @@
                                     </div>
                                     <div class="modal-body">
                                     <img class="img-portfolio img-responsive" src="img/fleurs-<?php echo $i; ?>.jpg">
-                                        <h3>Swag</h3>
+                                        <h3>Yolo</h3>
                                     </div>
                                     <div class="modal-footer">
                                         <button type="button" class="btn btn-danger" data-dismiss="modal">Fermer</button>

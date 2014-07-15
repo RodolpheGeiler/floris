@@ -40,7 +40,7 @@
     </div>
     <!-- /Side Menu -->
 
-    <!-- Portfolio -->
+    <!-- Fleurs -->
     <div id="portfolio" class="portfolio">
         <div class="container">
             <div class="row">
@@ -56,7 +56,7 @@
                 <div class="col-xs-6 col-md-3">
                     <div class="thumbnail">
                         <div class="portfolio-item">
-                            <img class="img-portfolio img-responsive" src="img/portfolio-<?php echo $i; ?>.jpg">
+                            <img class="img-portfolio img-responsive" src="img/fleurs-<?php echo $i; ?>.jpg">
                             <h4>Tulipes</h4>
                             <p>18€</p>
                             <button type="button" class="btn btn-sm" data-toggle="modal" data-target=".bs-example-modal-sm<?php echo $i; ?>"><span class="glyphicon glyphicon-list"></span> Details</button>
@@ -68,11 +68,11 @@
                                         <h4 class="modal-title" id="myModalLabel">Tulipes</h4>
                                     </div>
                                     <div class="modal-body">
-                                    <img class="img-portfolio img-responsive" src="img/portfolio-<?php echo $i; ?>.jpg">
-                                        <h3>Okayyy</h3>
+                                    <img class="img-portfolio img-responsive" src="img/fleurs-<?php echo $i; ?>.jpg">
+                                        <h3>Swag</h3>
                                     </div>
                                     <div class="modal-footer">
-                                        <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
+                                        <button type="button" class="btn btn-danger" data-dismiss="modal">Fermer</button>
                                     </div>
                                 </div>
                                 </div>
@@ -89,6 +89,17 @@
         </div>
     </div>
     <!-- /Portfolio -->
+    <!-- Accessoires -->
+    <div id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-md-offset-4 text-center">
+                    <h2>Nos Accessoires</h2>
+                    <hr>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- Footer -->
     <footer>
         <div class="container">
@@ -106,7 +117,7 @@
                         <a href="#top"><i class="fa fa-circle-arrow-up scroll fa-4x"></i></a>
                     </div>
                     <hr>
-                    <p>Copyright &copy; Company 2013</p>
+                    <p>Copyright &copy; Floris 2013</p>
                 </div>
             </div>
         </div>

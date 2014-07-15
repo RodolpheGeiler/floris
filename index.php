@@ -76,7 +76,9 @@
                     <div class="service-item">
                         <i class="service-icon glyphicon glyphicon-tree-conifer"></i>
                         <h4>Fleurs</h4>
-                        <p>Did your navigation system shut down in the middle of that asteroid field? We can repair any dings and scrapes to your spacecraft!</p>
+                        <p>Did your navigation system shut down in the middle of that asteroid field? We can repair any dings and scrapes to your spacecraft!
+						<div class="btn-group">
+						</div></p>
                     </div>
                 </div>
                 <div class="col-md-4 text-center">
@@ -94,6 +96,14 @@
                     </div>
                 </div>
             </div>
+            <div class="row">
+				<hr>
+                <div class="col-md-4 col-md-offset-4 text-center">
+						<a href="products.php">
+							Voir la liste complète
+						</a>
+				</div>
+			</div>
         </div>
     </div>
     <!-- /Services -->

@@ -18,7 +18,7 @@
 </head>
 
 <body>
-	  <div class="navbar navbar-fixed-top navbar-default" style="z-index:1"> 
+	  <div class="navbar navbar-fixed-top navbar-default" style="z-index:1;width:100%"> 
         <div class="container">
           <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -35,14 +35,30 @@
 			  <li><a href="#services">Produits</a></li>
 			  <li><a href="#portfolio">Thèmes</a></li>
               <li><a href="#contact">Contact</a></li>
-              <li><a href="">Espace personnel</a></li>
-            </ul>
-          </div><!--/.nav-collapse -->
-        </div>
-      </div>
+			  <li><a data-toggle="modal" data-target="#myModal" href="">S'enregistrer</a></li>		
 
-    <!-- Side Menu -->
-    <a id="menu-toggle" href="#" class="btn btn-primary btn-lg toggle"><span class="glyphicon glyphicon-shopping-cart">(0)</span></a>
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>			  
+			  <li><a href="">S'identifier</a></li>
+	<!-- Side Menu -->
+	<a href="#">
+    <button id="menu-toggle" class="btn btn-primary btn-lg toggle"><span class="glyphicon glyphicon-shopping-cart">(0)</span></button>
+	</a>	
     <div id="sidebar-wrapper">
         <ul class="sidebar-nav">
             <a id="menu-close" href="#" class="btn btn-default btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
@@ -54,6 +70,11 @@
         </ul>
     </div>
     <!-- /Side Menu -->
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+
     <!-- Full Page Image Header Area -->
     <div id="top" class="header">
         <div class="vert-text">

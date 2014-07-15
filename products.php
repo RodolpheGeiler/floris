@@ -19,23 +19,40 @@
 
 <body>
 
+
+      <div class="navbar navbar-fixed-top navbar-default" style="z-index:1"> 
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#top">FLORIS</a>
+          </div>
+          <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li><a href="index.php"><span class="glyphicon glyphicon-home"></span></a></li>
+              <li class="active"><a href="#services">Produits</a></li>
+              <li><a href="#portfolio">Thèmes</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li><a href="">Espace personnel</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+
     <!-- Side Menu -->
-    <a id="menu-toggle" href="#" class="btn btn-success btn-lg toggle"><i class="fa fa-bars"></i></a>
+    <a id="menu-toggle" href="#" class="btn btn-primary btn-lg toggle"><span class="glyphicon glyphicon-shopping-cart">(0)</span></a>
     <div id="sidebar-wrapper">
         <ul class="sidebar-nav">
             <a id="menu-close" href="#" class="btn btn-default btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
-            <li class="sidebar-brand"><a href="http://startbootstrap.com">Start Bootstrap</a>
+            <li class="sidebar-brand">Mon Panier
             </li>
-            <li><a href="#top">Accueil</a>
-            </li>
-            <li><a href="#about">About</a>
-            </li>
-            <li><a href="#services">Services</a>
-            </li>
-            <li><a href="#portfolio">Portfolio</a>
-            </li>
-            <li><a href="#contact">Nous contacter</a>
-            </li>
+            <div style="padding:15px">
+            <a href="#top">Veuillez vous identifier pour avoir accès à votre panier.</a>
+            </div>
         </ul>
     </div>
     <!-- /Side Menu -->
@@ -58,23 +75,62 @@
                         <div class="portfolio-item">
                             <img class="img-portfolio img-responsive" src="img/fleurs-<?php echo $i; ?>.jpg">
                             <h4>Tulipes</h4>
-                            <p>18€</p>
-                            <button type="button" class="btn btn-sm" data-toggle="modal" data-target=".bs-example-modal-sm<?php echo $i; ?>"><span class="glyphicon glyphicon-list"></span> Details</button>
+                            <p>A partir de 18 €</p>
+                            <button type="button" class="btn btn-sm" data-toggle="modal" data-target=".bs-example-modal-sm<?php echo $i; ?>"><span class="glyphicon glyphicon-list"></span> Options</button>
                             <div class="modal fade bs-example-modal-sm<?php echo $i; ?>" tabindex="-1" role="dialog" aria-labelledby="tulipedetails" aria-hidden="true">
                                 <div class="modal-dialog modal-lg">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                                        <h4 class="modal-title" id="myModalLabel">Tulipes</h4>
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                            <h2 class="modal-title" id="myModalLabel">Tulipes</h2>
+                                        </div>
+                                        <div class="modal-body">
+                                        <img class="img-portfolio img-responsive" src="img/fleurs-<?php echo $i; ?>.jpg">
+                                            <h5>Taille du bouquet:</h5>
+                                            <div class="radio">
+                                              <label>
+                                                <input type="radio" name="taille" id="taillepetit" value="petit">
+                                                Mignion - 18 €
+                                              </label>
+                                            </div>
+                                            <div class="radio">
+                                              <label>
+                                                <input type="radio" name="taille" id="taillemoyen" value="moyen" checked="true">
+                                                Classique (voir photo) - 23 €
+                                              </label>
+                                            </div>
+                                            <div class="radio">
+                                              <label>
+                                                <input type="radio" name="taille" id="taillegrand" value="grand">
+                                                Généreux - 28 €
+                                              </label>
+                                            </div>
+                                            <h5>Autres options:</h5>
+                                            <div class="checkbox">
+                                              <label>
+                                            <input type="checkbox" name="vase" id="vase" value="on">
+                                                Présenté en vase - + 15 €
+                                              </label>
+                                            </div>
+                                            <div class="checkbox">
+                                              <label>
+                                                <input type="checkbox" name="swag" id="swag" value="on">
+                                                Swag - + 250 €
+                                              </label>
+                                            </div>
+                                            <div class="checkbox">
+                                              <label>
+                                                <input type="checkbox" name="cadeau" id="cadeau" value="on">
+                                                Emballage cadeau : + 10 €
+                                              </label>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-danger" data-dismiss="modal">Fermer</button>
+                                            <input type="number" class="btn btn-default" style="width:8%" min="1" max="10" id="number_flowers" value="1">
+                                            <button type="button" class="btn btn-success"><span class="glyphicon glyphicon-shopping-cart"></span></button>
+                                        </div>
                                     </div>
-                                    <div class="modal-body">
-                                    <img class="img-portfolio img-responsive" src="img/fleurs-<?php echo $i; ?>.jpg">
-                                        <h3>Yolo</h3>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-danger" data-dismiss="modal">Fermer</button>
-                                    </div>
-                                </div>
                                 </div>
                             </div>
                             <input type="number" class="btn btn-default btn-sm" style="width:18%" min="1" max="10" id="number_flowers" value="1">

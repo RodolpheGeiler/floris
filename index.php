@@ -18,89 +18,79 @@
 </head>
 
 <body>
+	  <div class="navbar navbar-fixed-top navbar-default" style="z-index:1"> 
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#top">FLORIS</a>
+          </div>
+          <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#top"><span class="glyphicon glyphicon-home"></span></a></li>
+			  <li><a href="#services">Produits</a></li>
+			  <li><a href="#portfolio">Thèmes</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li><a href="">Espace personnel</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
 
     <!-- Side Menu -->
-    <a id="menu-toggle" href="#" class="btn btn-primary btn-lg toggle"><i class="fa fa-bars"></i></a>
+    <a id="menu-toggle" href="#" class="btn btn-primary btn-lg toggle"><span class="glyphicon glyphicon-shopping-cart">(0)</span></a>
     <div id="sidebar-wrapper">
         <ul class="sidebar-nav">
             <a id="menu-close" href="#" class="btn btn-default btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
-            <li class="sidebar-brand"><a href="http://startbootstrap.com">Start Bootstrap</a>
+            <li class="sidebar-brand">Mon Panier
             </li>
-            <li><a href="#top">Accueil</a>
-            </li>
-            <li><a href="#about">About</a>
-            </li>
-            <li><a href="#services">Services</a>
-            </li>
-            <li><a href="#portfolio">Portfolio</a>
-            </li>
-            <li><a href="#contact">Nous contacter</a>
-            </li>
+			<div style="padding:15px">
+            <a href="#top">Veuillez vous identifier pour avoir accès à votre panier.</a>
+            </div>
         </ul>
     </div>
     <!-- /Side Menu -->
-
     <!-- Full Page Image Header Area -->
     <div id="top" class="header">
         <div class="vert-text">
-            <h1>Start Bootstrap</h1>
-            <h3>
-                <em>We</em> Build Great Templates,
-                <em>You</em> Make Them Better</h3>
-            <a href="#about" class="btn btn-default btn-lg">Find Out More</a>
+            <h1>F L O R I S</h1>
         </div>
     </div>
     <!-- /Full Page Image Header Area -->
-
-    <!-- Intro -->
-    <div id="about" class="intro">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-md-offset-3 text-center">
-                    <h2>Subtle Sidebar is the Perfect Template for your Next Portfolio Website Project!</h2>
-                    <p class="lead">This template really has it all. It's up to you to customize it to your liking! It features some fresh photography courtesy of <a target="_blank" href="http://join.deathtothestockphoto.com/">Death to the Stock Photo</a>.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- /Intro -->
 
     <!-- Services -->
     <div id="services" class="services">
         <div class="container">
             <div class="row">
                 <div class="col-md-4 col-md-offset-4 text-center">
-                    <h2>Our Services</h2>
+                    <h2>Nos produits</h2>
                     <hr>
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-2 col-md-offset-2 text-center">
+                <div class="col-md-4 text-center">
                     <div class="service-item">
-                        <i class="service-icon fa fa-rocket"></i>
-                        <h4>Spacecraft Repair</h4>
+                        <i class="service-icon glyphicon glyphicon-tree-conifer"></i>
+                        <h4>Fleurs</h4>
                         <p>Did your navigation system shut down in the middle of that asteroid field? We can repair any dings and scrapes to your spacecraft!</p>
                     </div>
                 </div>
-                <div class="col-md-2 text-center">
+                <div class="col-md-4 text-center">
                     <div class="service-item">
-                        <i class="service-icon fa fa-magnet"></i>
-                        <h4>Problem Solving</h4>
+                        <i class="service-icon fa fa-leaf"></i>
+                        <h4>Plantes</h4>
                         <p>Need to know how magnets work? Our problem solving solutions team can help you identify problems and conduct exploratory research.</p>
                     </div>
                 </div>
-                <div class="col-md-2 text-center">
+                <div class="col-md-4 text-center">
                     <div class="service-item">
-                        <i class="service-icon fa fa-shield"></i>
-                        <h4>Blacksmithing</h4>
+                        <i class="service-icon glyphicon glyphicon-filter"></i>
+                        <h4>Accessoires</h4>
                         <p>Planning a time travel trip to the middle ages? Preserve the space time continuum by blending in with period accurate armor and weapons.</p>
-                    </div>
-                </div>
-                <div class="col-md-2 text-center">
-                    <div class="service-item">
-                        <i class="service-icon fa fa-pencil"></i>
-                        <h4>Pencil Sharpening</h4>
-                        <p>We've been voted the best pencil sharpening service for 10 consecutive years. If you have a pencil that feels dull, we'll get it sharp!</p>
                     </div>
                 </div>
             </div>

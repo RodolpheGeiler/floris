@@ -20,7 +20,7 @@
 <body>
 
     <!-- Side Menu -->
-    <a id="menu-toggle" href="#" class="btn btn-primary btn-lg toggle"><i class="fa fa-bars"></i></a>
+    <a id="menu-toggle" href="#" class="btn btn-success btn-lg toggle"><i class="fa fa-bars"></i></a>
     <div id="sidebar-wrapper">
         <ul class="sidebar-nav">
             <a id="menu-close" href="#" class="btn btn-default btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
@@ -52,7 +52,7 @@
             <div class="row">
             <?php
                 for ($i = 1; $i <= 4; $i++) {
-            ?>
+            ?>  
                 <div class="col-xs-6 col-md-3">
                     <div class="thumbnail">
                         <div class="portfolio-item">
@@ -69,7 +69,7 @@
                                     </div>
                                     <div class="modal-body">
                                     <img class="img-portfolio img-responsive" src="img/fleurs-<?php echo $i; ?>.jpg">
-                                        <h3>Swag</h3>
+                                        <h3>Yolo</h3>
                                     </div>
                                     <div class="modal-footer">
                                         <button type="button" class="btn btn-danger" data-dismiss="modal">Fermer</button>
@@ -141,24 +141,6 @@
         $("#sidebar-wrapper").toggleClass("active");
     });
     </script>
-    <script>
-    $(function() {
-        $('a[href*=#]:not([href=#])').click(function() {
-            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
-
-                var target = $(this.hash);
-                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-                if (target.length) {
-                    $('html,body').animate({
-                        scrollTop: target.offset().top
-                    }, 1000);
-                    return false;
-                }
-            }
-        });
-    });
-    </script>
-
 </body>
 
 </html>

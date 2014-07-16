@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Floris - Livraison de fleurs en France.</title>
+    <title>Floris - Livraison de fleurs en France</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
@@ -35,10 +35,9 @@
                 <ul class="nav navbar-nav">
                     <li class="active"><a href="#top"><span class="glyphicon glyphicon-home"></span></a></li>
         			<li><a href="products.php">Produits</a></li>
-        			<li><a href="#portfolio">Thèmes</a></li>
                     <li><a href="#contact">Contact</a></li>
-        			<li><a data-toggle="modal" data-target="#Login" href="">S'enregistrer</a></li>		
-        			<li><a href="">S'identifier</a></li>
+                    <li><a href="#map">Notre magasin</a></li>
+        			<li><a data-toggle="modal" data-target="#Login" href="">Se connecter</a></li>		
                 </ul>
             </div>
         </div>
@@ -53,20 +52,19 @@
                 <div class="modal-body">
                     <div class="row">
                         <div class="col-sm-6 col-md-8 col-md-offset-2">
-                                <h1 class="text-center login-title">Veuillez vous connecter afin de continuer</h1>
-                                <div class="account-wall">
+                            <h1 class="text-center login-title">Veuillez vous connecter afin de continuer</h1>
+                            <div class="account-wall">
                                 <img class="profile-img" src="img/logo-mini.png" alt="">
-                                    <form class="form-signin">
+                                <form class="form-signin">
                                     <input type="text" class="form-control" placeholder="Adresse e-mail" required autofocus>
                                     <input type="password" class="form-control" placeholder="Mot de passe" required>
-                                    <button class="btn btn-lg btn-primary btn-block" type="submit">
-                                        Connexion</button>
+                                    <button class="btn btn-lg btn-primary btn-block" type="submit">Connexion</button>
                                     <a href="#" class="pull-right need-help">Besoin d'aide ? </a><span class="clearfix"></span>
-                                    </form>
-                                </div>
-                                <a href="#" class="text-center new-account">Créer un compte </a>
+                                </form>
                             </div>
+                            <a href="#" class="text-center new-account">Créer un compte </a>
                         </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -75,7 +73,7 @@
     <!-- /Pop Ups -->
 	<!-- Cart -->
 	<a href="#">
-    <button id="menu-toggle" class="btn btn-primary btn-lg toggle"><span class="glyphicon glyphicon-shopping-cart">(0)</span></button>
+    <button id="menu-toggle" class="btn btn-primary btn-lg toggle sidebar-btn"><span class="glyphicon glyphicon-shopping-cart"> (0)</span></button>
 	</a>	
     <div id="sidebar-wrapper">
         <ul class="sidebar-nav">
@@ -88,11 +86,6 @@
         </ul>
     </div>
     <!-- /cart -->
-            </ul>
-          </div><!--/.nav-collapse -->
-        </div>
-      </div>
-
     <!-- Full Page Image Header Area -->
     <div id="top" class="header">
         <div class="vert-text">
@@ -219,9 +212,10 @@
     <!-- /Call to Action -->
 
     <!-- Map -->
-
-        <iframe width="50%" height="50%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2530.693029999789!2d3.056782899999992!3d50.6328190999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c2d58474c22fd7%3A0x69bae345afa70f88!2s23+Rue+de+Puebla%2C+59800+Lille!5e0!3m2!1sen!2sfr!4v1405519383517"></iframe>
-        </iframe>
+    <span id="map" class="map">
+    <iframe width="50%" height="50%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2530.693029999789!2d3.056782899999992!3d50.6328190999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c2d58474c22fd7%3A0x69bae345afa70f88!2s23+Rue+de+Puebla%2C+59800+Lille!5e0!3m2!1sen!2sfr!4v1405519383517"></iframe>
+    </iframe>
+    </span>
 
     <!-- /Map -->
 

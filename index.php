@@ -17,45 +17,63 @@
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
 </head>
 
-<body>
-	  <div class="navbar navbar-fixed-top navbar-default" style="z-index:1;width:100%"> 
-        <div class="container">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#top">FLORIS</a>
-          </div>
-          <div class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">
-              <li class="active"><a href="#top"><span class="glyphicon glyphicon-home"></span></a></li>
-			  <li><a href="products.php">Produits</a></li>
-			  <li><a href="#portfolio">Thèmes</a></li>
-              <li><a href="#contact">Contact</a></li>
-			  <li><a data-toggle="modal" data-target="#myModal" href="">S'enregistrer</a></li>		
+    <!-- Nav Bar -->
 
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div>			  
-			  <li><a href="">S'identifier</a></li>
-	<!-- Side Menu -->
+<body>
+    <div class="navbar navbar-fixed-top navbar-default" style="z-index:1;width:100%"> 
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#top">FLORIS</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#top"><span class="glyphicon glyphicon-home"></span></a></li>
+        			<li><a href="products.php">Produits</a></li>
+        			<li><a href="#portfolio">Thèmes</a></li>
+                    <li><a href="#contact">Contact</a></li>
+        			<li><a data-toggle="modal" data-target="#Login" href="">S'enregistrer</a></li>		
+        			<li><a href="">S'identifier</a></li>
+                </ul>
+            </div>
+        </div>
+     </div>
+
+    <!-- /Nav Bar -->
+    <!-- Pop Ups -->
+
+    <div class="modal fade" id="Login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="false">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-8 col-md-offset-2">
+                                <h1 class="text-center login-title">Veuillez vous connecter afin de continuer</h1>
+                                <div class="account-wall">
+                                <img class="profile-img" src="img/logo-mini.png" alt="">
+                                    <form class="form-signin">
+                                    <input type="text" class="form-control" placeholder="Adresse e-mail" required autofocus>
+                                    <input type="password" class="form-control" placeholder="Mot de passe" required>
+                                    <button class="btn btn-lg btn-primary btn-block" type="submit">
+                                        Connexion</button>
+                                    <a href="#" class="pull-right need-help">Besoin d'aide ? </a><span class="clearfix"></span>
+                                    </form>
+                                </div>
+                                <a href="#" class="text-center new-account">Créer un compte </a>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>      
+
+    <!-- /Pop Ups -->
+	<!-- Cart -->
 	<a href="#">
     <button id="menu-toggle" class="btn btn-primary btn-lg toggle"><span class="glyphicon glyphicon-shopping-cart">(0)</span></button>
 	</a>	
@@ -69,7 +87,7 @@
             </div>
         </ul>
     </div>
-    <!-- /Side Menu -->
+    <!-- /cart -->
             </ul>
           </div><!--/.nav-collapse -->
         </div>

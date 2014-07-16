@@ -102,7 +102,7 @@
                                             </div>
                                             <div class="radio">
                                               <label>
-                                                <input type="radio" name="taille" id="taillemoyen" value="moyen" checked="true">
+                                                <input type="radio" name="taille" id="taillemoyen" value="moyen" checked="checked">
                                                 Classique (voir photo) - 23 €
                                               </label>
                                             </div>
@@ -135,7 +135,7 @@
                                         <div class="modal-footer">
                                             <button type="button" class="btn btn-danger" data-dismiss="modal">Fermer</button>
                                             <input type="number" class="btn btn-default" style="width:8%" min="1" max="10" id="number_flowers" value="1">
-                                            <button type="button" class="btn btn-success"><span class="glyphicon glyphicon-shopping-cart"></span></button>
+                                            <button type="button" class="btn btn-success"><span class="glyphicon glyphicon-shopping-cart"></span> Ajouter</button>
                                         </div>
                                     </div>
                                 </div>

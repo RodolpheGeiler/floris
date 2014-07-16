@@ -73,10 +73,17 @@
                 <div class="col-xs-6 col-md-3">
                     <div class="thumbnail">
                         <div class="portfolio-item">
+                            <?php
+                                if ($i == 2) {
+                            ?>
+                            <div class="ribbon sale">
+                                <div class="theribbon">REDUCTION</div>
+                            </div>
+                            <?php } ?>
                             <img class="img-portfolio img-responsive" src="img/fleurs-<?php echo $i; ?>.jpg">
                             <h4>Tulipes</h4>
                             <p>A partir de 18 €</p>
-                            <button type="button" class="btn btn-sm" data-toggle="modal" data-target=".bs-example-modal-sm<?php echo $i; ?>"><span class="glyphicon glyphicon-list"></span> Options</button>
+                            <button type="button" class="btn btn-success btn-sm" data-toggle="modal" data-target=".bs-example-modal-sm<?php echo $i; ?>"><span class="glyphicon glyphicon-shopping-cart"></span> Ajouter au panier</button>
                             <div class="modal fade bs-example-modal-sm<?php echo $i; ?>" tabindex="-1" role="dialog" aria-labelledby="tulipedetails" aria-hidden="true">
                                 <div class="modal-dialog modal-lg">
                                     <div class="modal-content">
@@ -133,8 +140,6 @@
                                     </div>
                                 </div>
                             </div>
-                            <input type="number" class="btn btn-default btn-sm" style="width:18%" min="1" max="10" id="number_flowers" value="1">
-                            <button type="button" class="btn btn-success btn-sm"><span class="glyphicon glyphicon-shopping-cart"></span></button>
                         </div>
                     </div>
                 </div>  

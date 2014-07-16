@@ -32,7 +32,7 @@
           <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
               <li class="active"><a href="#top"><span class="glyphicon glyphicon-home"></span></a></li>
-			  <li><a href="#services">Produits</a></li>
+			  <li><a href="products.php">Produits</a></li>
 			  <li><a href="#portfolio">Thèmes</a></li>
               <li><a href="#contact">Contact</a></li>
 			  <li><a data-toggle="modal" data-target="#myModal" href="">S'enregistrer</a></li>		
@@ -201,34 +201,29 @@
     <!-- /Call to Action -->
 
     <!-- Map -->
-    <div id="contact" class="map">
-        <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe>
-        <br />
-        <small>
-            <a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A"></a>
-        </small>
+
+        <iframe width="50%" height="50%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2530.693029999789!2d3.056782899999992!3d50.6328190999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c2d58474c22fd7%3A0x69bae345afa70f88!2s23+Rue+de+Puebla%2C+59800+Lille!5e0!3m2!1sen!2sfr!4v1405519383517"></iframe>
         </iframe>
-    </div>
+
     <!-- /Map -->
 
     <!-- Footer -->
     <footer>
         <div class="container">
             <div class="row">
+            <p style="text-align:center">Livraison 7j/7 et jours fériés par un fleuriste <a href="index.php">FLORIS</a>. Contactez-nous au <span class="bold">03 33 25 84 25</span> du lundi au vendredi de 10h à 18h.</p>
                 <div class="col-md-6 col-md-offset-3 text-center">
                     <ul class="list-inline">
                         <li><i class="fa fa-facebook fa-3x"></i>
                         </li>
                         <li><i class="fa fa-twitter fa-3x"></i>
                         </li>
-                        <li><i class="fa fa-dribbble fa-3x"></i>
-                        </li>
                     </ul>
                     <div class="top-scroll">
                         <a href="#top"><i class="fa fa-circle-arrow-up scroll fa-4x"></i></a>
                     </div>
                     <hr>
-                    <p>Copyright &copy; Company 2013</p>
+                    <p>Copyright &copy; 2014 FLORIS</p>
                 </div>
             </div>
         </div>

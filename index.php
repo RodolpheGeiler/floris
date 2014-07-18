@@ -29,14 +29,14 @@
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#top">FLORIS</a>
+                <a href="index.php#top"><img src="img/logo-mini.png"></a>
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li class="active"><a href="#top"><span class="glyphicon glyphicon-home"></span></a></li>
-        			<li><a href="products.php">Produits</a></li>
-                    <li><a href="#contact">Contact</a></li>
+        			<li><a href="products.php">Produits</a></li>  
                     <li><a href="#map">Notre magasin</a></li>
+                    <li><a href="#contact">Contact</a></li>
         			<li><a data-toggle="modal" data-target="#Login" href="">Se connecter</a></li>		
                 </ul>
             </div>
@@ -46,7 +46,7 @@
     <!-- /Nav Bar -->
     <!-- Pop Ups -->
 
-    <div class="modal fade" id="Login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="false">
+    <div class="modal fade" id="Login" tabindex="-1" role="dialog" aria-labelledby="Login" aria-hidden="false">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-body">
@@ -72,16 +72,15 @@
 
     <!-- /Pop Ups -->
 	<!-- Cart -->
-	<a href="#">
+	<a href="">
     <button id="menu-toggle" class="btn btn-primary btn-lg toggle sidebar-btn"><span class="glyphicon glyphicon-shopping-cart"> (0)</span></button>
 	</a>	
     <div id="sidebar-wrapper">
         <ul class="sidebar-nav">
             <a id="menu-close" href="#" class="btn btn-default btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
-            <li class="sidebar-brand">Mon Panier
-            </li>
+            <a href="panier.php"><li class="sidebar-brand">Mon Panier</a></li>
 			<div style="padding:15px">
-            <a href="#top">Veuillez vous identifier pour avoir accès à votre panier.</a>
+            <a data-toggle="modal" data-target="#Login">Veuillez vous identifier pour avoir accès à votre panier.</a></a><br>
             </div>
         </ul>
     </div>
@@ -128,96 +127,135 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
-				<hr>
-                <div class="col-md-4 col-md-offset-4 text-center">
-						<a href="products.php">
-							Voir la liste complète
-						</a>
-				</div>
-			</div>
         </div>
     </div>
     <!-- /Services -->
 
-    <!-- Callout -->
-    <div class="callout">
-        <div class="vert-text">
-            <h1>A Dramatic Text Area</h1>
-        </div>
-    </div>
-    <!-- /Callout -->
+
 
     <!-- Portfolio -->
     <div id="portfolio" class="portfolio">
         <div class="container">
             <div class="row">
                 <div class="col-md-4 col-md-offset-4 text-center">
-                    <h2>Our Work</h2>
+                    <h2>Articles en promotions</h2>
                     <hr>
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-4 col-md-offset-2 text-center">
-                    <div class="portfolio-item">
-                        <a href="#">
-                            <img class="img-portfolio img-responsive" src="img/portfolio-1.jpg">
-                        </a>
-                        <h4>Cityscape</h4>
+            <?php
+                for ($i = 1; $i <= 4; $i++) {
+            ?>  
+                <div class="col-md-3">
+                    <div class="thumbnail">
+                        <div class="portfolio-item">
+                            <?php
+                                if ($i == 2) {
+                            ?>
+                            <div class="ribbon sale">
+                                <div class="theribbon">REDUCTION</div>
+                            </div>
+                            <?php } ?>
+                            <img class="img-portfolio img-responsive" src="img/fleurs-<?php echo $i; ?>.jpg">
+                            <h4>Tulipes</h4>
+                            <p>A partir de 18 €</p>
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-4 text-center">
-                    <div class="portfolio-item">
-                        <a href="#">
-                            <img class="img-portfolio img-responsive" src="img/portfolio-2.jpg">
-                        </a>
-                        <h4>Is That On Fire?</h4>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4 col-md-offset-2 text-center">
-                    <div class="portfolio-item">
-                        <a href="#">
-                            <img class="img-portfolio img-responsive" src="img/portfolio-3.jpg">
-                        </a>
-                        <h4>Stop Sign</h4>
-                    </div>
-                </div>
-                <div class="col-md-4 text-center">
-                    <div class="portfolio-item">
-                        <a href="#">
-                            <img class="img-portfolio img-responsive" src="img/portfolio-4.jpg">
-                        </a>
-                        <h4>Narrow Focus</h4>
-                    </div>
-                </div>
+                </div>  
+            <?php
+                }
+            ?>
             </div>
         </div>
     </div>
     <!-- /Portfolio -->
 
-    <!-- Call to Action -->
-    <div class="call-to-action">
+    <!-- Callout -->
+    <div class="callout">
+        <div class="vert-text">
+            <h1>Yolo Swag</h1>
+        </div>
+    </div>
+    <!-- /Callout -->
+
+    <!-- Map & Infos -->
+    <div class="services" id="map">
         <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-md-offset-3 text-center">
-                    <h3>The buttons below are impossible to resist.</h3>
-                    <a href="#" class="btn btn-lg btn-default">Click Me!</a>
-                    <a href="#" class="btn btn-lg btn-primary">Look at Me!</a>
+        <div class="box">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <h3><i class="fa fa-map-marker"></i> Addresse</h3>
+                        <p>22 Rue Puebla<br>
+                        59200<br>
+                        Lille<br>
+                        <strong>France</strong></p>
+                    </div>
+                    <div class="col-sm-4">
+                        <h3><i class="glyphicon glyphicon-bell"></i> Horraires</h3>
+                        <p>Notre magasin est ouvert:</p>
+                        <ul>
+                        <li><strong>Lundi:</strong> de 14h à 18h.</li>
+                        <li><strong>Mardi au vendredi:</strong> de 10h à 18h.</li>
+                        <li><strong>Samedi:</strong> de 10h à 14h.</li>
+                        </ul>
+                    </div>   
+                    <div class="col-sm-4">
+                        <h3><i class="fa fa-phone"></i> Numero du magasin</h3>
+                        <p>Numero gratuit du lundi au vendredi de 10h à 18h.</p>
+                        <p><strong><a href="tel:03333258425">+333 33 25 84 25</a></strong></p>
+                    </div>        
+                </div>
+                <hr>
+                <div id="map" style="position: relative; overflow: hidden;">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2530.6824890975804!2d3.0569183000000084!3d50.63301489999992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c2d5841126057b%3A0x74bd342d9da7dd55!2s22+Rue+de+Puebla%2C+59800+Lille!5e0!3m2!1sen!2sfr!4v1405702007659" width="100%" height="300" frameborder="0" style="border:0"></iframe>
                 </div>
             </div>
         </div>
     </div>
-    <!-- /Call to Action -->
+    <!-- /Map & Infos-->
 
-    <!-- Map -->
-    <span id="map" class="map">
-    <iframe width="50%" height="50%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2530.693029999789!2d3.056782899999992!3d50.6328190999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c2d58474c22fd7%3A0x69bae345afa70f88!2s23+Rue+de+Puebla%2C+59800+Lille!5e0!3m2!1sen!2sfr!4v1405519383517"></iframe>
-    </iframe>
-    </span>
-
-    <!-- /Map -->
+    <!-- Contact -->
+    <div class="container">
+        <div class="box" id="contact">
+            <h2 class="text-center">Formulaire de contact</h2>
+            <div class="row">
+                <form role="form" action="" method="post" >
+                    <div class="col-lg-6">
+                        <div class="form-group">
+                        <label for="InputName">Votre Nom</label>
+                        <div class="input-group">
+                            <input type="text" class="form-control" name="InputName" id="InputName" placeholder="Entrez votre nom" required>
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span></div>
+                        </div>
+                        <div class="form-group">
+                        <label for="InputEmail">Votre E-mail</label>
+                        <div class="input-group">
+                            <input type="email" class="form-control" id="InputEmail" name="InputEmail" placeholder="Entrez votre e-mail" required  >
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span></div>
+                        </div>
+                        <input type="submit" name="submit" id="submit" value="Envoyer" class="btn btn-info pull-right">
+                    </div>
+                    <hr class="featurette-divider hidden-lg">
+                    <div class="col-lg-5 col-md-push-1">
+                        <div class="form-group">
+                            <label for="InputMessage">Message</label>
+                            <div class="input-group"> 
+                                <textarea name="InputMessage" id="InputMessage" class="form-control" rows="5" required></textarea>
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span>
+                            </div>
+                        </div>
+                    <div class="well well-sm"><strong><i class="glyphicon glyphicon-ok form-control-feedback"></i> Champs Requis</strong></div>
+                    </div>
+                </form>
+                <!-- Message de validation et d'erreur
+                <div class="col-md-12">
+                    <div class="alert alert-success"><strong><span class="glyphicon glyphicon-send"></span> Message envoyé ! (If form ok!)</strong></div>   
+                    <div class="alert alert-danger"><span class="glyphicon glyphicon-alert"></span><strong> Erreur ! Verrifiez le formulaire</strong></div>
+                </div> -->
+            </div>
+        </div>
+    </div><br>
+    <!-- /Contact -->
 
     <!-- Footer -->
     <footer>
@@ -231,9 +269,6 @@
                         <li><i class="fa fa-twitter fa-3x"></i>
                         </li>
                     </ul>
-                    <div class="top-scroll">
-                        <a href="#top"><i class="fa fa-circle-arrow-up scroll fa-4x"></i></a>
-                    </div>
                     <hr>
                     <p>Copyright &copy; 2014 FLORIS</p>
                 </div>

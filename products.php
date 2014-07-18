@@ -20,31 +20,65 @@
 <body>
 
 
-      <div class="navbar navbar-fixed-top navbar-default" style="z-index:1"> 
-        <div class="container">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#top">FLORIS</a>
-          </div>
-          <div class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">
-              <li><a href="index.php"><span class="glyphicon glyphicon-home"></span></a></li>
-              <li class="active"><a href="#services">Produits</a></li>
-              <li><a href="#portfolio">Thèmes</a></li>
-              <li><a href="#contact">Contact</a></li>
-              <li><a href="">Espace personnel</a></li>
-            </ul>
-          </div><!--/.nav-collapse -->
-        </div>
-      </div>
 
-    <!-- Side Menu -->
-    <a id="menu-toggle" href="#" class="btn btn-primary btn-lg toggle"><span class="glyphicon glyphicon-shopping-cart">(0)</span></a>
+    <!-- Nav Bar -->
+
+<body>
+    <div class="navbar navbar-fixed-top navbar-default" style="z-index:1;width:100%"> 
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a href="index.php#top"><img src="img/logo-mini.png"></a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.php"><span class="glyphicon glyphicon-home"></span></a></li>
+                    <li class="active"><a href="#top">Produits</a></li>
+                    <li><a href="index.php#map">Notre magasin</a></li>
+                    <li><a href="index.php#contact">Contact</a></li>
+                    <li><a data-toggle="modal" data-target="#Login" href="">Se connecter</a></li>       
+                </ul>
+            </div>
+        </div>
+     </div>
+
+    <!-- /Nav Bar -->
+    <!-- Pop Ups -->
+
+    <div class="modal fade" id="Login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="false">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-8 col-md-offset-2">
+                            <h1 class="text-center login-title">Veuillez vous connecter afin de continuer</h1>
+                            <div class="account-wall">
+                                <img class="profile-img" src="img/logo-mini.png" alt="">
+                                <form class="form-signin">
+                                    <input type="text" class="form-control" placeholder="Adresse e-mail" required autofocus>
+                                    <input type="password" class="form-control" placeholder="Mot de passe" required>
+                                    <button class="btn btn-lg btn-primary btn-block" type="submit">Connexion</button>
+                                    <a href="#" class="pull-right need-help">Besoin d'aide ? </a><span class="clearfix"></span>
+                                </form>
+                            </div>
+                            <a href="#" class="text-center new-account">Créer un compte </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>      
+
+    <!-- /Pop Ups -->
+    <!-- Cart -->
+    <a href="#">
+    <button id="menu-toggle" class="btn btn-primary btn-lg toggle sidebar-btn"><span class="glyphicon glyphicon-shopping-cart"> (0)</span></button>
+    </a>    
     <div id="sidebar-wrapper">
         <ul class="sidebar-nav">
             <a id="menu-close" href="#" class="btn btn-default btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
@@ -55,7 +89,7 @@
             </div>
         </ul>
     </div>
-    <!-- /Side Menu -->
+    <!-- /cart -->
 
     <!-- Fleurs -->
     <div id="portfolio" class="portfolio">
@@ -165,20 +199,16 @@
     <footer>
         <div class="container">
             <div class="row">
+            <p style="text-align:center">Livraison 7j/7 et jours fériés par un fleuriste <a href="index.php">FLORIS</a>. Contactez-nous au <span class="bold">03 33 25 84 25</span> du lundi au vendredi de 10h à 18h.</p>
                 <div class="col-md-6 col-md-offset-3 text-center">
                     <ul class="list-inline">
                         <li><i class="fa fa-facebook fa-3x"></i>
                         </li>
                         <li><i class="fa fa-twitter fa-3x"></i>
                         </li>
-                        <li><i class="fa fa-dribbble fa-3x"></i>
-                        </li>
                     </ul>
-                    <div class="top-scroll">
-                        <a href="#top"><i class="fa fa-circle-arrow-up scroll fa-4x"></i></a>
-                    </div>
                     <hr>
-                    <p>Copyright &copy; Floris 2013</p>
+                    <p>Copyright &copy; 2014 FLORIS</p>
                 </div>
             </div>
         </div>

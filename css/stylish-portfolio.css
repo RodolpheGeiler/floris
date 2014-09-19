@@ -29,7 +29,7 @@ font-weight: bold;
   margin-right: -250px;
   right: 0;
   width: 250px;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(250, 250, 250, 0.6);
   position: fixed;
   height: 100%;
   overflow-y: auto;
@@ -139,9 +139,22 @@ background-color: #7fbbda;
 }
 
 .btn-primary:hover{
-  color: #fff;
-  background-color: #B8B8FA;
-  border-color: #84f384;
+  color: #7fbbda;
+  background-color: white;
+  border-color: white;
+}
+
+.btn-connex{
+  color: grey;
+  background-color: white;
+  border-color: #5bc0de;
+  box-shadow:0px 0px 2px 0px #5bc0de;
+}
+.btn-connex:hover{
+  color: black;
+  background-color: white;
+  border:1px #5bc0de dotted	;
+  box-shadow:0px 0px 2px 0px #5bc0de;
 }
 
 /* Full Page Image Header Area */
@@ -291,7 +304,7 @@ i.service-icon {
 {
     margin-top: 30px;
     padding: 40px 0px 20px 0px;
-    background-color: #eafaea;
+    background-color: white;
     -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
     -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);

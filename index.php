@@ -58,7 +58,7 @@
                                 <form class="form-signin">
                                     <input type="text" class="form-control" placeholder="Adresse e-mail" required autofocus>
                                     <input type="password" class="form-control" placeholder="Mot de passe" required>
-                                    <button class="btn btn-lg btn-primary btn-block" type="submit">Connexion</button>
+                                    <button class="btn btn-lg btn-connex btn-block" type="submit">Connexion</button>
                                     <a href="#" class="pull-right need-help">Besoin d'aide ? </a><span class="clearfix"></span>
                                 </form>
                             </div>

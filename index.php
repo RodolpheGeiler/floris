@@ -20,7 +20,7 @@
     <!-- Nav Bar -->
 
 <body>
-    <div class="navbar navbar-fixed-top navbar-default" style="z-index:1;width:100%"> 
+    <div class="navbar navbar-fixed-top navbar-default" style="z-index:1;width:100%;padding:0"> 
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -173,7 +173,7 @@
     <!-- Callout -->
     <div class="callout">
         <div class="vert-text">
-            <h1>Yolo Swag</h1>
+            <h1>"Un simple regard posé sur une fleur et  voilà une journée remplie de bonheur." </h1>
         </div>
     </div>
     <!-- /Callout -->
@@ -184,14 +184,14 @@
         <div class="box">
                 <div class="row">
                     <div class="col-sm-4">
-                        <h3><i class="fa fa-map-marker"></i> Addresse</h3>
+                        <h3><i class="fa fa-map-marker"></i> Adresse</h3>
                         <p>22 Rue Puebla<br>
                         59200<br>
                         Lille<br>
                         <strong>France</strong></p>
                     </div>
                     <div class="col-sm-4">
-                        <h3><i class="glyphicon glyphicon-bell"></i> Horraires</h3>
+                        <h3><i class="glyphicon glyphicon-bell"></i> Horaires</h3>
                         <p>Notre magasin est ouvert:</p>
                         <ul>
                         <li><strong>Lundi:</strong> de 14h à 18h.</li>
@@ -233,18 +233,23 @@
                             <input type="email" class="form-control" id="InputEmail" name="InputEmail" placeholder="Entrez votre e-mail" required  >
                             <span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span></div>
                         </div>
-                        <input type="submit" name="submit" id="submit" value="Envoyer" class="btn btn-info pull-right">
+					    <div class="well well-sm visible-lg hidden-md hidden-sm hidden-xs"><strong><i class="glyphicon glyphicon-ok form-control-feedback"></i> Champs Requis</strong></div>
                     </div>
-                    <hr class="featurette-divider hidden-lg">
-                    <div class="col-lg-5 col-md-push-1">
+                   
+                    <div class="col-lg-6 col-md-push-1">
                         <div class="form-group">
                             <label for="InputMessage">Message</label>
                             <div class="input-group"> 
                                 <textarea name="InputMessage" id="InputMessage" class="form-control" rows="5" required></textarea>
                                 <span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span>
                             </div>
+						</div>
+						<div class="form-group">
+							
+								<div class="hidden-lg visible-md-* visible-sm-* visible-xs-* col-md-8 col-sm-8 col-xs-8"><strong><i class="glyphicon glyphicon-ok form-control-feedback"></i> Champs Requis</strong></div>
+								<input type="submit" name="submit" id="submit" value="Envoyer" class="btn btn-info btn-md">
+							
                         </div>
-                    <div class="well well-sm"><strong><i class="glyphicon glyphicon-ok form-control-feedback"></i> Champs Requis</strong></div>
                     </div>
                 </form>
                 <!-- Message de validation et d'erreur

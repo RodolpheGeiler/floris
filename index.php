@@ -233,7 +233,6 @@
                             <input type="email" class="form-control" id="InputEmail" name="InputEmail" placeholder="Entrez votre e-mail" required  >
                             <span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span></div>
                         </div>
-                        <input type="submit" name="submit" id="submit" value="Envoyer" class="btn btn-info pull-right">
                     </div>
                     <hr class="featurette-divider hidden-lg">
                     <div class="col-lg-5 col-md-push-1">
@@ -245,6 +244,7 @@
                             </div>
                         </div>
                     <div class="well well-sm"><strong><i class="glyphicon glyphicon-ok form-control-feedback"></i> Champs Requis</strong></div>
+					<input type="submit" name="submit" id="submit" value="Envoyer" class="btn btn-info pull-right">
                     </div>
                 </form>
                 <!-- Message de validation et d'erreur

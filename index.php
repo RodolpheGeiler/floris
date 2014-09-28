@@ -104,7 +104,6 @@ mysql_select_db($bd) or die("erreur de connexion à la base de données");
         <div class="container">
             <div class="row">
                 <div class="col-md-4 col-md-offset-4 text-center">
-                    <h2>Nos produits</h2>
                     <hr>
                 </div>
             </div>
@@ -180,7 +179,7 @@ mysql_select_db($bd) or die("erreur de connexion à la base de données");
     <!-- Callout -->
     <div class="callout">
         <div class="vert-text">
-            <h1>"Un simple regard posé sur une fleur et  voilà une journée remplie de bonheur." </h1>
+            <h1>"Un simple regard posé sur une fleur et voilà une journée remplie de bonheur." </h1>
         </div>
     </div>
     <!-- /Callout -->
@@ -188,7 +187,7 @@ mysql_select_db($bd) or die("erreur de connexion à la base de données");
     <!-- Map & Infos -->
     <div class="services" id="map">
         <div class="container">
-        <div class="box">
+            <div class="box">
                 <div class="row">
                     <div class="col-sm-4">
                         <h3><i class="fa fa-map-marker"></i> Adresse</h3>
@@ -222,48 +221,48 @@ mysql_select_db($bd) or die("erreur de connexion à la base de données");
     <!-- /Map & Infos-->
 
     <!-- Contact -->
-    <div class="container">
-        <div class="box" id="contact">
-            <h2 class="text-center">Formulaire de contact</h2>
-            <div class="row">
-                <form role="form" action="" method="post" >
-                    <div class="col-lg-6">
-                        <div class="form-group">
-                        <label for="InputName">Votre Nom</label>
-                        <div class="input-group">
-                            <input type="text" class="form-control" name="InputName" id="InputName" placeholder="Entrez votre nom" required>
-                            <span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span></div>
-                        </div>
-                        <div class="form-group">
-                        <label for="InputEmail">Votre E-mail</label>
-                        <div class="input-group">
-                            <input type="email" class="form-control" id="InputEmail" name="InputEmail" placeholder="Entrez votre e-mail" required  >
-                            <span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span></div>
-                        </div>
-					    <div class="well well-sm visible-lg hidden-md hidden-sm hidden-xs"><strong><i class="glyphicon glyphicon-ok form-control-feedback"></i> Champs Requis</strong></div>
-                    </div>
-                   
-                    <div class="col-lg-6 col-md-push-1">
-                        <div class="form-group">
-                            <label for="InputMessage">Message</label>
-                            <div class="input-group"> 
-                                <textarea name="InputMessage" id="InputMessage" class="form-control" rows="5" required></textarea>
-                                <span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span>
+    <div class="contact">
+        <div class="container">
+            <div class="box" id="contact">
+                <h2 class="text-center">Formulaire de contact</h2>
+                <div class="row">
+                    <form role="form" action="" method="post" >
+                        <div class="col-lg-6">
+                            <div class="form-group">
+                            <label for="InputName">Votre Nom</label>
+                            <div class="input-group">
+                                <input type="text" class="form-control" name="InputName" id="InputName" placeholder="Entrez votre nom" required>
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span></div>
                             </div>
-						</div>
-						<div class="form-group">
-							
-								<div class="hidden-lg visible-md-* visible-sm-* visible-xs-* col-md-8 col-sm-8 col-xs-8"><strong><i class="glyphicon glyphicon-ok form-control-feedback"></i> Champs Requis</strong></div>
-								<input type="submit" name="submit" id="submit" value="Envoyer" class="btn btn-info btn-md">
-							
+                            <div class="form-group">
+                            <label for="InputEmail">Votre E-mail</label>
+                            <div class="input-group">
+                                <input type="email" class="form-control" id="InputEmail" name="InputEmail" placeholder="Entrez votre e-mail" required  >
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span></div>
+                            </div>
+    					    <div class="well well-sm visible-lg hidden-md hidden-sm hidden-xs"><strong><i class="glyphicon glyphicon-ok form-control-feedback"></i> Champs Requis</strong></div>
                         </div>
-                    </div>
-                </form>
-                <!-- Message de validation et d'erreur
-                <div class="col-md-12">
-                    <div class="alert alert-success"><strong><span class="glyphicon glyphicon-send"></span> Message envoyé ! (If form ok!)</strong></div>   
-                    <div class="alert alert-danger"><span class="glyphicon glyphicon-alert"></span><strong> Erreur ! Verrifiez le formulaire</strong></div>
-                </div> -->
+                       
+                        <div class="col-lg-6 col-md-push-1">
+                            <div class="form-group">
+                                <label for="InputMessage">Message</label>
+                                <div class="input-group"> 
+                                    <textarea name="InputMessage" id="InputMessage" class="form-control" rows="5" required></textarea>
+                                    <span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span>
+                                </div>
+    						</div>
+    						<div class="form-group">
+    						  <div class="hidden-lg visible-md-* visible-sm-* visible-xs-* col-md-8 col-sm-8 col-xs-8"><strong><i class="glyphicon glyphicon-ok form-control-feedback"></i> Champs Requis</strong></div>
+    						  <input type="submit" name="submit" id="submit" value="Envoyer" class="btn btn-info btn-md">
+                            </div>
+                        </div>
+                    </form>
+                    <!-- Message de validation et d'erreur
+                    <div class="col-md-12">
+                        <div class="alert alert-success"><strong><span class="glyphicon glyphicon-send"></span> Message envoyé ! (If form ok!)</strong></div>   
+                        <div class="alert alert-danger"><span class="glyphicon glyphicon-alert"></span><strong> Erreur ! Verrifiez le formulaire</strong></div>
+                    </div> -->
+                </div>
             </div>
         </div>
     </div><br>

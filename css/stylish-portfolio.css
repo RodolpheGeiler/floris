@@ -192,10 +192,10 @@ i.service-icon {
   border: 3px solid #ffffff;
   border-radius: 50%;
   display: inline-block;
-  font-size: 56px;
-  width: 140px;
-  height: 140px;
-  line-height: 136px;
+  font-size: 30px;
+  width: 50px;
+  height: 50px;
+  line-height: 46px;
   vertical-align: middle; 
   text-align: center;
 }
@@ -351,8 +351,8 @@ i.service-icon {
 /* Footer */
 
 footer {
-  padding: 100px 0;
-  background:rgba(47,57,126,0.5);
+  padding: 50px 0;
+  background: #7fbbda;
 }
 
 .top-scroll {
@@ -372,6 +372,11 @@ i.scroll:hover {
   color: #0a5175;
 }
 
+/* Contact */
+
+.contact {
+  padding: 60px 0;
+}
 
 /* Responsive */
 

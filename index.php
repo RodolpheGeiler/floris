@@ -18,7 +18,13 @@
 </head>
 
     <!-- Nav Bar -->
-
+<?php 
+include ('connex.php');
+/*
+mysql_connect($host, $user,$password) or die("erreur de connexion au serveur"); 
+mysql_select_db($bd) or die("erreur de connexion à la base de données"); 
+*/
+?>
 <body>
     <div class="navbar navbar-fixed-top navbar-default" style="z-index:1;width:100%;padding:0"> 
         <div class="container">
@@ -105,25 +111,26 @@
             <div class="row">
                 <div class="col-md-4 text-center">
                     <div class="service-item">
-                        <i class="service-icon glyphicon glyphicon-tree-conifer"></i>
+                        <a href="products.php#Fleur"><i class="service-icon glyphicon glyphicon-tree-conifer"></i></a>
                         <h4>Fleurs</h4>
-                        <p>Did your navigation system shut down in the middle of that asteroid field? We can repair any dings and scrapes to your spacecraft!
-						<div class="btn-group">
-						</div></p>
+                        <p>
+						</p>
                     </div>
                 </div>
                 <div class="col-md-4 text-center">
                     <div class="service-item">
-                        <i class="service-icon fa fa-leaf"></i>
+                        <a href="products.php#Plante"><i class="service-icon fa fa-leaf"></i></a>
                         <h4>Plantes</h4>
-                        <p>Need to know how magnets work? Our problem solving solutions team can help you identify problems and conduct exploratory research.</p>
+                        <p>
+						</p>
                     </div>
                 </div>
                 <div class="col-md-4 text-center">
                     <div class="service-item">
-                        <i class="service-icon glyphicon glyphicon-filter"></i>
+                        <a href="products.php#Accessoire"><i class="service-icon glyphicon glyphicon-filter"></i></a>
                         <h4>Accessoires</h4>
-                        <p>Planning a time travel trip to the middle ages? Preserve the space time continuum by blending in with period accurate armor and weapons.</p>
+                        <p>
+						</p>
                     </div>
                 </div>
             </div>

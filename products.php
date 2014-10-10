@@ -58,7 +58,7 @@
                         <div class="col-sm-6 col-md-8 col-md-offset-2">
                             <h1 class="text-center login-title">Veuillez vous connecter afin de continuer</h1>
                             <div class="account-wall">
-                                <img class="profile-img" src="img/logo-mini.png" alt="">
+                                <img class="profile-img" style="width:20" src="img/logo-big.png" alt="">
                                 <form class="form-signin">
                                     <input type="text" class="form-control" placeholder="Adresse e-mail" required autofocus>
                                     <input type="password" class="form-control" placeholder="Mot de passe" required>
@@ -82,21 +82,55 @@
     <div id="sidebar-wrapper">
         <ul class="sidebar-nav">
             <a id="menu-close" href="#" class="btn btn-default btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
-            <li class="sidebar-brand">Mon Panier
-            </li>
+            <a href="panier.php"><li class="sidebar-brand">Mon Panier</a></li>
             <div style="padding:15px">
             <a href="#top">Veuillez vous identifier pour avoir accès à votre panier.</a>
             </div>
         </ul>
     </div>
     <!-- /cart -->
+    <div id="services" class="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2 col-md-offset-5 text-center">
+                    <hr>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 text-center">
+                    <div class="service-item">
+                        <a href="#Fleurs"><i class="service-icon glyphicon glyphicon-tree-conifer"></i></a>
+                        <h4>Fleurs</h4>
+                        <p>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="service-item">
+                        <a href="#Plantes"><i class="service-icon fa fa-leaf"></i></a>
+                        <h4>Plantes</h4>
+                        <p>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="service-item">
+                        <a href="#Accessoires"><i class="service-icon glyphicon glyphicon-filter"></i></a>
+                        <h4>Accessoires</h4>
+                        <p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Fleurs -->
     <div id="portfolio" class="portfolio">
         <div class="container">
             <div class="row">
                 <div class="col-md-4 col-md-offset-4 text-center">
-                    <h2 id="Fleur">Nos fleurs</h2>
+                    <h2 id="Fleurs">Nos fleurs</h2>
                     <hr>
                 </div>
             </div>
@@ -183,15 +217,51 @@
             </div>
         </div>
     </div>
-    <!-- /Portfolio -->
+    <!-- /Fleurs -->
+    <!-- Plantes -->
+    <div id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-md-offset-4 text-center">
+                    <h2 id="Plantes">Nos Plantes</h2>
+                    <hr>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-6 col-md-3">
+                    <div class="thumbnail">
+                        <div class="portfolio-item">
+                            <img class="img-portfolio img-responsive" src="img/plantes-1.jpg">
+                            <h4>Bulbizare</h4>
+                            <p>A partir de 6 €</p>
+                            <button type="button" class="btn btn-success btn-sm" data-toggle="modal" data-target=".bs-example-modal-sm<?php echo $i; ?>"><span class="glyphicon glyphicon-shopping-cart"></span> Ajouter au panier</button>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </div>
+    <!--- /Plantes -->
     <!-- Accessoires -->
     <div id="portfolio" class="portfolio">
         <div class="container">
             <div class="row">
                 <div class="col-md-4 col-md-offset-4 text-center">
-                    <h2>Nos Accessoires</h2>
+                    <h2 id="Accessoires">Nos Accessoires</h2>
                     <hr>
                 </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-6 col-md-3">
+                    <div class="thumbnail">
+                        <div class="portfolio-item">
+                            <img class="img-portfolio img-responsive" src="img/access-1.jpg">
+                            <h4>Pot en ceramique</h4>
+                            <p>A partir de 9 €</p>
+                            <button type="button" class="btn btn-success btn-sm" data-toggle="modal" data-target=".bs-example-modal-sm<?php echo $i; ?>"><span class="glyphicon glyphicon-shopping-cart"></span> Ajouter au panier</button>
+                        </div>
+                    </div>
+                </div> 
             </div>
         </div>
     </div>
